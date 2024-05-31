@@ -2,14 +2,11 @@
 paleta de colores: #023047 , #219ebc48, #8ecae6, #ffb703, #fb8500
 para letras: #e2e2b7
 **/
-<<<<<<< HEAD
 * {
     color: #c4c3b4;
     font-family: "Nunito";
 }
 
-=======
->>>>>>> 1295be449131fbbbb7cf0864e1a157e11470277b
 body {
     box-sizing: border-box;
     margin: 0;
@@ -18,11 +15,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-<<<<<<< HEAD
-=======
-    font-family: "Nunito";
-    color: #e2e2b7;
->>>>>>> 1295be449131fbbbb7cf0864e1a157e11470277b
     width: 100vw;
 
 }
@@ -198,7 +190,6 @@ footer {
     filter: drop-shadow(#e2e2b7ad 0px 0px 20px);
 }
 
-<<<<<<< HEAD
 /**Comienza portafolio**/
 .section_portfolio {
     margin-top: 5%;
@@ -213,9 +204,6 @@ footer {
 article .subtitle {
     border-bottom: none;
 }
-=======
-/**Atributos para portafolio**/
->>>>>>> 1295be449131fbbbb7cf0864e1a157e11470277b
 
 .image_portfolio {
     border-radius: 50%;
@@ -223,38 +211,6 @@ article .subtitle {
     height: 300px;
 }
 
-<<<<<<< HEAD
-=======
-.section_portfolio {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
-}
-
-@media (max-width: 767px) {
-    .section_portfolio {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-.article_portfolio {
-    width: 25%;
-}
-
-@media  (max-width: 767px) {
-    .article_portfolio {
-        width: 100%
-    }
-}
-
-.title_proyect {
-    border-bottom: solid 1px #e2e2b7;
-    width: 40%;
-}
-
->>>>>>> 1295be449131fbbbb7cf0864e1a157e11470277b
 /**Atributos para sobre mi**/
 .subtitle_aboutme {
     border: none;
