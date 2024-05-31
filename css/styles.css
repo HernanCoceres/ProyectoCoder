@@ -10,7 +10,7 @@ para letras: #e2e2b7
 body {
     box-sizing: border-box;
     margin: 0;
-    background-image: url(../Imagenes/Imagen\ Fondo/Fondo.jpeg);
+    background-image: url(../imagenes/imagenfondo/Fondo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
