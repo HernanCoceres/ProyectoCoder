@@ -4,6 +4,7 @@ para letras: #e2e2b7
 **/
 * {
     color: #c4c3b4;
+    font-family: "Nunito";
 }
 
 body {
@@ -14,8 +15,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    font-family: "Nunito";
-    color: #e2e2b7;
     width: 100vw;
 
 }
