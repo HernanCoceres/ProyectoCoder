@@ -187,41 +187,25 @@ footer {
     filter: drop-shadow(#e2e2b7ad 0px 0px 20px);
 }
 
-/**Atributos para portafolio**/
+/**Comienza portafolio**/
+.section_portfolio {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    grid-template-rows: 600px;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+article .subtitle {
+    border-bottom: none;
+}
 
 .image_portfolio {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-}
-
-.section_portfolio {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
-}
-
-@media (max-width: 767px) {
-    .section_portfolio {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-.article_portfolio {
-    width: 25%;
-}
-
-@media  (max-width: 767px) {
-    .article_portfolio {
-        width: 100%
-    }
-}
-
-.title_proyect {
-    border-bottom: solid 1px #e2e2b7;
-    width: 40%;
 }
 
 /**Atributos para sobre mi**/
