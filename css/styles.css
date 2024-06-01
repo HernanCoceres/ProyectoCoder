@@ -107,6 +107,12 @@ footer {
     text-wrap: nowrap;
 }
 
+@media (max-width: 768px) {
+    .title_principal {
+        margin-top: 20%;
+    }
+}
+
 .name_index {
     text-align: center;
 }
