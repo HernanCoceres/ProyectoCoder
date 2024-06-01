@@ -2,7 +2,7 @@
 paleta de colores: #023047 , #219ebc48, #8ecae6, #ffb703, #fb8500
 para letras: #e2e2b7
 **/
-* {
+* { color: $white;
     font-family: "Nunito";
 }
 
