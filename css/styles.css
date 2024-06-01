@@ -103,7 +103,8 @@ footer {
     margin-left: 10%;
     margin-top: 8%;
     border-bottom: solid 1px #e2e2b7;
-    width: 40%;
+    width: max-content;
+    text-wrap: nowrap;
 }
 
 .name_index {
@@ -237,6 +238,12 @@ article .subtitle {
     width: 400px;
 }
 
+@media (max-width: 768px) {
+    .div_presentation {
+        text-align: center;
+    }
+}
+
 @media (max-width:768px) {
     .div_presentation {
         width: 100vw;
@@ -271,10 +278,18 @@ article .subtitle {
     height: 400px;
     width: 400px;
 }
+@media (max-width: 767px) {
+    .photo_aboutme {
+    height: 300px;
+    width: 300px;
+    }
+}
 
 .div_title--experience {
-    width: 30%;
+    width: max-content;
     margin-left: 10%;
+    margin-top: 10%;
+    text-wrap: nowrap;
 }
 
 .title_experience {
@@ -304,6 +319,7 @@ article .subtitle {
 .item_experience {
     display: flex;
     margin: 5% 0 0 15%;
+    flex-wrap: wrap;
 }
 
 /**Atributos para opiniones**/
