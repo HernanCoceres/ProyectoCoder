@@ -1,1 +1,424 @@
-/**Variables**/
+@import "variables";
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+/**Atributos generales
+paleta de colores: #023047 , #219ebc48, #8ecae6, #ffb703, #fb8500
+para letras: #e2e2b7
+**/
+* { color: $col_white;
+    font-family: "Nunito";
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-image: url(../imagenes/imagenfondo/Fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+/**Atributos para el nav**/
+.header {
+    box-shadow: #e2e2b775 0px 0px 20px;
+    position: fixed; top: 0;
+    width: 100vw;
+    background-color: #111111cb;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 30px;
+    top: 5px
+}
+/**media para la barra de navegacion**/
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
+
+.navbar_list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .navbar_list {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+.navlist_item {
+    padding: 1px;
+    margin-right: 15px;
+}
+
+.golden_letter {
+    color: $col_golden;
+}
+
+/**Atributos para el footer**/
+footer {
+    width: 100vw;
+    text-align: center;
+    border-top: $underline;
+    margin-top: 10%;
+}
+
+/**Atributos para index**/
+.content_index {
+    margin-top: 8%;
+    width: 100vw;
+}
+
+.title_principal {
+    margin: 0%;
+    margin-top: 10%;
+    font-size: 4rem;
+}
+
+.title_noindex {
+    margin-left: 10%;
+    margin-top: 8%;
+    border-bottom: $underline;
+    width: max-content;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+    .title_principal {
+        margin-top: 20%;
+    }
+}
+
+.name_index {
+    text-align: center;
+    display: block;
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-top: 0%;
+    border-bottom: $underline;
+}
+
+.subtitle_index {
+    border: none;
+    text-align: center;
+    margin-left: 0%;
+}
+
+.sub_subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.first_content--index {
+    display: flex;
+    margin: 0%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+    .first_content--index {
+        flex-wrap: wrap;
+    }
+}
+
+.content_p--index {
+    @include sizes(300px, 300px);
+    padding-top: 4%;
+}
+
+.paragraph_index {
+    text-align: center;
+    margin: 10px;
+}
+.content_img--index {
+    @include sizes (300px, 300px);
+    margin-right: 20px;
+}
+
+.photo_index {
+    @include sizes(300px, 300px);
+    border-radius: 50%;
+}
+
+.section_contact--index {
+    border-top: $underline;
+}
+
+.contact_index {
+    display: flex;
+    list-style: none;
+    padding-left: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_contact--index {
+    @include sizes(40px, 40px);
+    text-align: center;
+}
+
+.icon_social {
+    margin-top: 8px;
+    width: 25px;
+    &:hover {
+        width: 32px;
+        filter: drop-shadow(#e2e2b7ad 0px 0px 20px);
+    }
+}
+
+/**Comienza portafolio**/
+.section_portfolio {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    grid-template-rows: 600px;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+article {
+    .subtitle {
+        border-bottom: none;
+    }
+}
+
+.image_portfolio {
+    border-radius: 50%;
+    @include sizes(300px, 300px);
+}
+
+/**Atributos para sobre mi**/
+.subtitle_aboutme {
+    border: none;
+}
+
+.description_expwork {
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.presentation_aboutme {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    
+}
+
+@media (max-width: 768px) {
+    .presentation_aboutme {
+        flex-wrap: wrap;
+    }
+}
+
+.div_presentation {
+    width: 400px;
+}
+
+@media (max-width: 768px) {
+    .div_presentation {
+        text-align: center;
+    }
+}
+
+@media (max-width:768px) {
+    .div_presentation {
+        width: 100vw;
+    }
+}
+.div_experience {
+    width: 50vw;
+    align-items: center;
+}
+.title_skills {
+    margin-left: 10%;
+    display: flex;
+    margin-bottom: 2%;
+}
+
+.img_skills {
+    margin-inline: 5%;
+}
+
+.skills {
+    text-align: center;
+}
+
+.text_presentation {
+    margin-left: 5%;
+    border-bottom: $underline;
+    padding-bottom: 5%;
+}
+
+.photo_aboutme {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
+@media (max-width: 767px) {
+    .photo_aboutme {
+    @include sizes(300px, 300px);
+    }
+}
+
+.div_title--experience {
+    width: max-content;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-wrap: nowrap;
+}
+
+.title_experience {
+    font-size: 1.75rem;
+    margin-top: 15%;
+    border-bottom: $underline;
+    
+}
+
+.img_skills {
+    @include sizes(40px, 40px);
+}
+
+.img_expwork {
+    border-radius: 50%;
+    @include sizes(200px, 200px);
+    margin-right: 3%;
+}
+
+.list_experience {
+    padding-left: 0%;
+    list-style: none;
+}
+
+.item_experience {
+    display: flex;
+    margin: 5% 0 0 15%;
+    flex-wrap: wrap;
+}
+
+/**Atributos para opiniones**/
+.name_opinion {
+    border-bottom: $underline;
+}
+
+.section_opinion {
+    margin-left: 15%;
+}
+
+.article_opinion2 {
+    margin-left: 15%;
+}
+
+.article_opinion {
+    display: flex;
+    margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+    .article_opinion, .section_opinion {
+        margin-left: 0;
+    }
+}
+.div_opinion {
+    margin-left: 2%;
+}
+
+.text_opinion {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.photo_opinion {
+    @include sizes(180px, 180px);
+    border-radius: 50%;
+}
+
+/**Atributos para contactame**/
+.contain_contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .contain_contact {
+        flex-direction: column;
+    }
+}
+
+.section_form {
+   justify-content: center;
+   width: 30vw;
+   margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+    .section_form {
+        width: 90vw;
+    }
+}
+.div_input {
+    margin-top: 15px;
+}
+
+.input_form, .button_send {
+    box-sizing: border-box;
+    color: $col_white;
+    font-size: 0.9rem;
+    font-family: "Nunito";
+    padding: 8px;
+    border-radius: 6px;
+    border: $underline;
+    background-color: #1111118a ;
+    box-shadow: #00000085 2px 2px 5px 2px;
+    width: 100%;
+    outline: none;
+    &:hover {
+        box-shadow: #e2e2b75d 0px 0px 20px;
+    }
+}
+
+textarea {
+    color: $col_white;
+    max-height: 300px;
+    min-height: 100px;
+    resize: none;
+}
+
+.text_form {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.text_contact {
+    margin-top: 40%;
+    border-bottom: $underline;
+}
+
+.section_networks {
+    margin: auto;
+}
