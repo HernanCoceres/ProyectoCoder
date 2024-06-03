@@ -24,13 +24,17 @@ body {
     height: 100vh;
 
 }
+
+main {
+    position: relative;
+    z-index: -1;
+}
 /**Atributos para el nav**/
 .header {
     box-shadow: #e2e2b775 0px 0px 20px;
     position: fixed; top: 0;
     width: 100vw;
     background-color: #111111cb;
-    z-index: 10;
 
 }
 
