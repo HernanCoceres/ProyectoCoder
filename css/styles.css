@@ -28,11 +28,7 @@ body {
   top: 0;
   width: 100vw;
   background-color: rgba(17, 17, 17, 0.7960784314);
-}
-
-.navbar {
-  display: flex;
-  justify-content: right;
+  z-index: 1;
 }
 
 .logo {
@@ -50,25 +46,12 @@ body {
     display: none;
   }
 }
-.navbar_list {
-  list-style: none;
-  display: flex;
-  padding-left: 0;
-  align-items: center;
-  margin-right: 15px;
-}
-
 @media (max-width: 768px) {
   .navbar_list {
     text-align: center;
     margin-right: 0;
   }
 }
-.navlist_item {
-  padding: 1px;
-  margin-right: 15px;
-}
-
 .golden_letter {
   color: #ffb703;
 }

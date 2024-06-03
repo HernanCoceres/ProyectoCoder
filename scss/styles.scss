@@ -25,22 +25,14 @@ body {
 
 }
 
-main {
-    position: relative;
-    z-index: -1;
-}
 /**Atributos para el nav**/
 .header {
     box-shadow: #e2e2b775 0px 0px 20px;
-    position: fixed; top: 0;
+    position: absolute; top: 0;
     width: 100vw;
     background-color: #111111cb;
+    z-index: 1;
 
-}
-
-.navbar {
-    display: flex;
-    justify-content: right;
 }
 
 .logo {
@@ -58,24 +50,11 @@ main {
     }
 }
 
-.navbar_list {
-    list-style: none;
-    display: flex;
-    padding-left: 0;
-    align-items: center;
-    margin-right: 15px;
-}
-
 @media (max-width: 768px) {
     .navbar_list {
         text-align: center;
         margin-right: 0;
     }
-}
-
-.navlist_item {
-    padding: 1px;
-    margin-right: 15px;
 }
 
 .golden_letter {
