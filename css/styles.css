@@ -1,5 +1,7 @@
+@charset "UTF-8";
 /**Colores**/
 /**Borders subtitle**/
+/**Tamaño ancho y largo**/
 /**Atributos generales
 paleta de colores: #023047 , #219ebc48, #8ecae6, #ffb703, #fb8500
 para letras: #e2e2b7
@@ -24,7 +26,7 @@ body {
 /**Atributos para el nav**/
 .header {
   box-shadow: rgba(226, 226, 183, 0.4588235294) 0px 0px 20px;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100vw;
   background-color: rgba(17, 17, 17, 0.7960784314);
