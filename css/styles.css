@@ -1,10 +1,11 @@
 @charset "UTF-8";
+/**Imports styles**/
 /**Colores**/
 /**Borders subtitle**/
 /**Tamaño ancho y largo**/
 /**Atributos generales
 paleta de colores: #023047 , #219ebc48, #8ecae6, #ffb703, #fb8500
-para letras: #e2e2b7
+para letras: #e0e0d8
 **/
 * {
   color: #e0e0d8;
@@ -42,18 +43,6 @@ body {
   top: 5px;
 }
 
-/**media para la barra de navegacion**/
-@media (max-width: 768px) {
-  .logo {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .navbar_list {
-    text-align: center;
-    margin-right: 0;
-  }
-}
 .golden_letter {
   color: #ffb703;
 }
@@ -86,11 +75,6 @@ footer {
   text-wrap: nowrap;
 }
 
-@media (max-width: 768px) {
-  .title_principal {
-    margin-top: 20%;
-  }
-}
 .name_index {
   text-align: center;
   display: block;
@@ -120,9 +104,12 @@ footer {
   margin-top: 100px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .first_content--index {
     flex-wrap: wrap;
+  }
+  .title_principal {
+    margin-top: 20%;
   }
 }
 .content_p--index {
@@ -212,11 +199,6 @@ article .subtitle {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  .presentation_aboutme {
-    flex-wrap: wrap;
-  }
-}
 .div_presentation {
   width: 400px;
 }
@@ -225,8 +207,9 @@ article .subtitle {
   .div_presentation {
     text-align: center;
   }
-}
-@media (max-width: 768px) {
+  .presentation_aboutme {
+    flex-wrap: wrap;
+  }
   .div_presentation {
     width: 100vw;
   }
@@ -262,7 +245,7 @@ article .subtitle {
   width: 400px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .photo_aboutme {
     width: 300px;
     height: 300px;
@@ -348,11 +331,6 @@ article .subtitle {
   justify-content: space-around;
 }
 
-@media (max-width: 768px) {
-  .contain_contact {
-    flex-direction: column;
-  }
-}
 .section_form {
   justify-content: center;
   width: 30vw;
@@ -362,6 +340,9 @@ article .subtitle {
 @media (max-width: 768px) {
   .section_form {
     width: 90vw;
+  }
+  .contain_contact {
+    flex-direction: column;
   }
 }
 .div_input {
@@ -405,5 +386,10 @@ textarea {
 .section_networks {
   margin: auto;
 }
+
+/**Imports abstract**/
+/**Colores**/
+/**Borders subtitle**/
+/**Tamaño ancho y largo**/
 
 /*# sourceMappingURL=styles.css.map */
