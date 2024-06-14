@@ -37,6 +37,7 @@ body {
 
 .golden_letter {
     color: $col_golden;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /**Atributos para el footer**/
@@ -45,6 +46,10 @@ footer {
     text-align: center;
     border-top: $underline;
     margin-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    background: #00000056;
 }
 
 /**Atributos para index**/
@@ -160,6 +165,7 @@ footer {
     grid-auto-flow: row;
     justify-content: space-evenly;
     text-align: center;
+    align-items: center;
 }
 
 article {
@@ -169,9 +175,31 @@ article {
 }
 
 .image_portfolio {
-    border-radius: 50%;
     @include sizes(300px, 300px);
+    border-radius: 50%;
 }
+
+.image_hc {
+    margin-bottom: 20%;
+}
+
+.article_portfolio {
+    border-radius: 8px;
+    box-shadow: #e2e2b775 0px 0px 4px;
+    padding: 25px;
+    margin: 10px;
+    &:hover{
+        box-shadow: #e2e2b775 0px 0px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article_portfolio {
+        box-shadow: none;
+        margin-top: 25%;
+    }
+}
+
 
 /**Atributos para sobre mi**/
 .subtitle_aboutme {
