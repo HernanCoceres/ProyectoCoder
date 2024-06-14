@@ -32,12 +32,7 @@ body {
 }
 
 .logo {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
-    position: absolute;
-    left: 30px;
-    top: 5px
+    @include sizes (40px, 40px);
 }
 
 .golden_letter {
@@ -373,10 +368,14 @@ textarea {
 }
 
 .text_contact {
-    margin-top: 40%;
     border-bottom: $underline;
 }
 
 .section_networks {
     margin: auto;
+    text-align: center;
+}
+
+.div_section--networks {
+    margin-top: 10%;
 }

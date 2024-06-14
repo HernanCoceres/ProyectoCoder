@@ -35,12 +35,8 @@ body {
 }
 
 .logo {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: bold;
-  position: absolute;
-  left: 30px;
-  top: 5px;
+  width: 40px;
+  height: 40px;
 }
 
 .golden_letter {
@@ -379,12 +375,16 @@ textarea {
 }
 
 .text_contact {
-  margin-top: 40%;
   border-bottom: solid 1px #e0e0d8;
 }
 
 .section_networks {
   margin: auto;
+  text-align: center;
+}
+
+.div_section--networks {
+  margin-top: 10%;
 }
 
 /**Imports abstract**/
