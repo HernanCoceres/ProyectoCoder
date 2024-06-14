@@ -44,12 +44,20 @@ body {
 footer {
     width: 100vw;
     text-align: center;
-    border-top: $underline;
+    box-shadow: #e2e2b775 0px 0px 4px;
     margin-top: 10%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 20px;
+    padding-top: 10px;
     background: #00000056;
+}
+
+.copyright {
+    margin-bottom: 0;
+}
+
+.icon_footer {
+    width: 18px;
 }
 
 /**Atributos para index**/
