@@ -422,6 +422,11 @@ textarea {
   margin-top: 10%;
 }
 
+@media (max-width: 768px) {
+  .img_marca {
+    margin-top: 15%;
+  }
+}
 /**Imports abstract**/
 /**Colores**/
 /**Borders subtitle**/
